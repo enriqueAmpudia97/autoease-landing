@@ -715,11 +715,14 @@
 
             <div class="contact-box">
                 <form action="https://formsubmit.co/auto.ease.solutions@hotmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://autoeaseai.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Inquiry - AutoEase AI">
                     <div class="form-group">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Work Email" required>
-                        <input type="text" placeholder="Company Name" required>
-                        <textarea rows="4" placeholder="Briefly describe your current manual bottleneck..." required></textarea>
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Work Email" required>
+                        <input type="text" name="company" placeholder="Company Name" required>
+                        <textarea name="message" rows="4" placeholder="Briefly describe your current manual bottleneck..." required></textarea>
                     </div>
                     
                     <div style="display: flex; flex-direction: column; gap: 1rem;">
