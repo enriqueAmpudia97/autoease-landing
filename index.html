@@ -714,17 +714,19 @@
             <p class="section-subtitle">Consultations are free. Manual friction is expensive. Let's discuss your custom system.</p>
 
             <div class="contact-box">
-                <form action="https://formsubmit.co/auto.ease.solutions@hotmail.com" method="POST">
-                    <input type="hidden" name="_next" value="thank-you.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="New Inquiry - AutoEase AI">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms: replace YOUR_ACCESS_KEY_HERE with your key from web3forms.com -->
+                    <input type="hidden" name="access_key" value="6a21ffbc-9e0f-46ce-9783-ca8ddbb950e2">
+                    <input type="hidden" name="redirect" value="thank-you.html">
+                    <input type="hidden" name="subject" value="New Inquiry - AutoEase Solutions">
+
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Full Name" required>
                         <input type="email" name="email" placeholder="Work Email" required>
                         <input type="text" name="company" placeholder="Company Name" required>
                         <textarea name="message" rows="4" placeholder="Briefly describe your current manual bottleneck..." required></textarea>
                     </div>
-                    
+
                     <div style="display: flex; flex-direction: column; gap: 1rem;">
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
                         <a href="https://wa.me/9903100732" class="btn btn-whatsapp">
